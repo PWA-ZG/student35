@@ -101,7 +101,7 @@ const NoteEntryBox: React.FC = () => {
                   value={formData.title}
                   onChange={handleChange}
                 />
-              {!hasCamera ? (
+              {hasCamera ? (
                   <button onClick={() => setCameraShown(true)}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
